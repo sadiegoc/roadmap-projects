@@ -1,0 +1,94 @@
+:root {
+    --color: #3498db;
+    --changelog-width: 700px;
+    --circle-width: 36px;
+    --date-width: 200px;
+    --description-width: calc(var(--changelog-width) - var(--circle-width) - var(--date-width));
+    --bar-width: 4px;
+    --log-h: 80px;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./inter.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: inter; font-size: 0.9rem;
+}
+
+body {
+    background-color: #f6f7fb;
+    width: 100vw; height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%; height: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.changelog-container {
+    width: var(--changelog-width);
+    position: relative;
+    margin-top: 50px;
+}
+
+.bar {
+    position: absolute;
+    background-color: var(--color);
+    left: calc(var(--date-width) + (var(--circle-width) / 2) - (var(--bar-width) / 2)); top: 0;
+    width: var(--bar-width); height: 100%;
+}
+
+.logs {
+    display: flex; flex-direction: column;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    height: var(--log-h);
+}
+
+.circle {
+    width: calc(var(--circle-width) / 2); height: calc(var(--circle-width) / 2);
+    border-radius: 50%;
+    background-color: var(--color);
+}
+
+.circle-container {
+    width: var(--circle-width); height: var(--circle-width);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date {
+    width: var(--date-width);
+    display: flex; justify-content: flex-end;
+    
+    color: #888;
+}
+
+.description {
+    width: var(--description-width);
+    display: flex; justify-content: flex-start;
+    font-weight: 600;
+}
