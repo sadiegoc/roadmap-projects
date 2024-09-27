@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: inter;
-    src: url(./inter.ttf);
+    src: url(../assets/fonts/inter.ttf);
 }
 
 * {
