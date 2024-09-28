@@ -1,0 +1,158 @@
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/inter.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: inter;
+    font-size: 1rem;
+}
+
+.container, .testimonial-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-cards {
+    flex-direction: column;
+}
+
+/* CARD-1 */
+.card-1 {
+    width: 400px;
+    display: flex; flex-direction: column;
+}
+
+.card-1 .comment {
+    text-align: justify;
+    background-color: #181818;
+    color: #eee;
+    
+    border-radius: 10px;
+    padding: 15px; margin: 0 0 20px 0;
+    position: relative;
+}
+
+.card-1 .comment::after {
+    content: '';
+    width: 16px; height: 16px;
+    background-color: #181818;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: -7px; left: 30px;
+}
+
+.card-1 .user {
+    display: flex; align-items: center;
+    height: 80px;
+}
+
+.card-1 .data {
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.card-1 .data .name {
+    font-size: 1.1rem;
+}
+
+.card-1 .data .role {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.card-1 .image img {
+    width: 80px; border-radius: 50%;
+}
+
+
+/* CARD-2 */
+.card-2 {
+    width: 400px;
+    display: flex; flex-direction: column;
+    border: 2px solid #181818;
+    padding: 20px; margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card-2 .comment {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.card-2 .user {
+    display: flex; align-items: center;
+    height: 80px;
+}
+
+.card-2 .data {
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.card-2 .data .name {
+    font-size: 1.1rem;
+}
+
+.card-2 .data .role {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.card-2 .image img {
+    width: 80px; border-radius: 50%;
+}
+
+
+/* CARD-3 */
+.card-3 {
+    width: 650px; height: 200px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.card-3 .image, .card-3 .image img {
+    height: 100%; border-radius: 15px;
+}
+
+.card-3 .user {
+    border-radius: 15px;
+    background-color: #181818;
+    color: #eee;
+    padding: 20px; margin-left: 10px;
+
+}
+
+.card-3 .user .data {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-3 .user .comment {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.card-3 .user .name {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-3 .user .role {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #777;
+}
+
+.card-3 .fa-star {
+    font-size: 1.2rem;
+}
+
+.checked {
+    color: orange;
+}
