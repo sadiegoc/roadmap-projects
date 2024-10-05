@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible Form UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <div class="control">
+                    <label for="name">Full Name</label>
+                    <div class="input-control">
+                        <input type="text" id="name" placeholder="What should we call you?"/>
+                    </div>
+                    <small id="name-error">error</small>
+                </div>
+
+                <div class="control">
+                    <label for="email">E-mail</label>
+                    <div class="input-control">
+                        <input type="email" id="email" placeholder="name@example.com"/>
+                    </div>
+                    <small class="show" id="email-error">E-mail is already taken</small>
+                </div>
+
+                <div class="control">
+                    <label for="password">Enter Password</label>
+                    <div class="input-control">
+                        <input type="password" id="password" placeholder="xxxxxxxx"/>
+                        <button class="eye">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
+                    <small id="password-error">error</small>
+                </div>
+
+                <div class="control">
+                    <label for="confirmPassword">Full Name</label>
+                    <div class="input-control">
+                        <input type="password" id="confirmPassword" placeholder="xxxxxxxx"/>
+                        <button class="eye">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
+                    <small id="confirm-password-error">error</small>
+                </div>
+
+                <div class="control">
+                    <button class="btn-submit">Update Profile</button>
+                </div>
+            </form>
+
+            <div class="profile-progress">
+                <div class="progress">
+                    <span>65%</span>
+                </div>
+                <h5>Profile Completeness</h5>
+                <div class="missions">
+                    <ul>
+                        <li class="done">Create Account</li>
+                        <li class="done">Update Roadmap Progress</li>
+                        <li class="done">Setup Public Profile</li>
+                        <li>Complete your first project</li>
+                        <li>Invite your Friends</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
