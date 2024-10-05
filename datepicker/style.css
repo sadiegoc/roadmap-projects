@@ -1,0 +1,87 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute; inset: 0;
+
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.input button, .input input {
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.input input {
+    padding: 0 8px;
+    outline: 0;
+}
+
+.input button {
+    background-color: transparent;
+    border-left: 0; padding: 0 8px;
+    flex-grow: 1;
+}
+
+.calendar {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #ccc;
+}
+
+.calendar .month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar .month button {
+    background: transparent;
+    border: none;
+}
+
+.calendar {
+    display: none;
+}
+
+.calendar.active {
+    display: block;
+}
+
+.days thead, .calendar .month {
+    height: 30px;
+}
+
+.days table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.days table td {
+    text-align: center;
+    width: 32px; height: 32px;
+}
+
+.days table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #ccc;
+}
+
+.days table tbody tr td:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.days table tbody tr:first-child td {
+    border-top: 1px solid #ccc;
+}
