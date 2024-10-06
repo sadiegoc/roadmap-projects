@@ -8,3 +8,4 @@
 - [X] [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
 - [X] [Image Grid Layout](https://roadmap.sh/projects/image-grid)
 - [X] [Tooltip UI](https://roadmap.sh/projects/tooltip-ui)
+- [X] [Tabs](https://roadmap.sh/projects/simple-tabs)
