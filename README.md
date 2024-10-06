@@ -10,3 +10,4 @@
 - [X] [Tooltip UI](https://roadmap.sh/projects/tooltip-ui)
 - [X] [Tabs](https://roadmap.sh/projects/simple-tabs)
 - [X] [Cookie Consent](https://roadmap.sh/projects/cookie-consent)
+- [X] [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)

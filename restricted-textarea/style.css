@@ -1,0 +1,64 @@
+:root {
+    --black-soft: #999;
+    --black-hard: #111;
+    --warning: #e74c3c;
+}
+
+*, *::after, *::before {
+    font-family: monospace;
+    font-size: 1rem;
+    
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+
+    border: none;
+}
+
+body {
+    width: 100vw; height: 100vh;
+}
+
+.container {
+    width: 100%; height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea-container {
+    width: 400px; height: 200px;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textarea {
+    width: 100%; height: 100%;
+    position: absolute;
+    border: 2px solid var(--black-soft);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fcfcfc;
+    resize: none;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+#textarea:focus {
+    border-color: var(--black-hard);
+}
+
+#count {
+    position: absolute;
+    bottom: 10px; right: 10px;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+#count.warning, #textarea.warning {
+    color: var(--warning);
+    border-color: var(--warning);
+}
