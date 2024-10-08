@@ -12,3 +12,4 @@
 - [X] [Cookie Consent](https://roadmap.sh/projects/cookie-consent)
 - [X] [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)
 - [X] [Accordion](https://roadmap.sh/projects/accordion)
+- [X] [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown)
